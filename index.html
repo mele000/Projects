@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css.css/css.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>IZAZOV:GODINE IZRAZENE U DANIMA</h1>
+      <div class="buttons">
+        <div>
+          <button class="btn btn-primary" onclick="godineUDanima()">
+            Klikni
+          </button>
+        </div>
+
+        <div>
+          <button class="btn btn-danger" onclick="remove()">Ponovo</button>
+        </div>
+      </div>
+
+      <div class="buttons buttons2">
+        <div id="rez"></div>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <h1>IZAZOV 2 - GENERISI MACU</h1>
+      <button
+        class="btn btn-primary"
+        id="maca-generator"
+        onclick="klikniZaMacu()"
+      >
+        Klikni da napravis macu
+      </button>
+      <div class="flex-box-container-2" id="maca"></div>
+    </div>
+
+    <div class="container-3">
+      <h1>IZAZOV 3 - PAPIR-KAMEN-MAKAZE</h1>
+      <div class="flex-box-container-3">
+        <img src="img/papir.jpg" id="papir" onclick="pkm(this)" alt="" />
+        <img src="img/kamen.jpg" id="kamen" onclick="pkm(this)" alt="" />
+        <img src="img/makaze.jpeg" id="makaze" onclick="pkm(this)" alt="" />
+
+        <div id="covjek"></div>
+        <div id="tekst"></div>
+        <div id="robot"></div>
+      </div>
+    </div>
+
+    <div class="container-4">
+      <h1>IZAZOV 4 - PROMJENI BOJE DUGMADI</h1>
+
+      <form action="">
+        <select
+          name="backdrop"
+          id="background"
+          onchange="buttonColorChange(this)"
+        >
+          <option value="random">Radnom</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="reset">Reset</option>
+        </select>
+      </form>
+
+      <div class="flex-box-container-4">
+        <button class="btn btn-primary">AAA</button>
+        <button class="btn btn-danger">HEYY</button>
+        <button class="btn btn-warning">WOOOW</button>
+        <button class="btn btn-success">HEEE</button>
+      </div>
+    </div>
+
+
+    <script src="js/js.js"></script>
+  </body>
+</html>
